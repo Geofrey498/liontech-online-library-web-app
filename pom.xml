@@ -75,13 +75,13 @@
 	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
-	      <name>Jenkins-JJ Releases Nexus Repository</name>
+	      <name>LIONTECH ACADEMY  Releases Nexus Repository</name>
 	      <url>http://18.190.26.17:8081/repository/Release-Jenkins-JJ-Project/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Jenkins-JJ Snapshot Nexus Repository </name>
+	      <name>LIONTECH ACADEMY Snapshot Nexus Repository </name>
 	      <url>http://18.190.26.17:8081/repository/Jenkins-JJ-Snapshot/</url>
 	    </snapshotRepository>
 	    
