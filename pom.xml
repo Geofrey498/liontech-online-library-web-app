@@ -8,7 +8,7 @@
 	<packaging>war</packaging>
 	<build>
 		<sourceDirectory>src/main/java</sourceDirectory>
-		<finalName>onlinebookstore</finalName>
+		<finalName>library-jj-app</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -76,13 +76,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>LIONTECH ACADEMY  Releases Nexus Repository</name>
-	      <url>http://18.190.26.17:8081/repository/Release-Jenkins-JJ-Project//</url>
+	      <url>http://3.144.215.115:8081/repository/Release-Jenkins-JJ-Project/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>LIONTECH ACADEMY Snapshot Nexus Repository </name>
-	      <url>http://18.190.26.17:8081/repository/Jenkins-JJ-Snapshot/</url>
+	      <url>http://3.144.215.115:8081/repository/Jenkins-JJ-Snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
@@ -92,7 +92,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://18.220.145.108:9000/</sonar.host.url>
+		<sonar.host.url>http://13.59.35.3:9000/</sonar.host.url>
 		<sonar.login>JJ-</sonar.login>  
 		<sonar.login>c80be6537fc10f5cb12266858340be4e890974f2</sonar.login>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
