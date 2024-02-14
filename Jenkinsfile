@@ -33,7 +33,7 @@ node{
     }
     stage('8Approval$Reviewprep4prod'){
     sh "echo 'application is ready for review and prod release' "
-    timeout[time:5, unit 'DAYS']{input message:"App is ready for release to prod, please review and signup"
+    timeout[time:5, unit: 'DAYS']{input message:"App is ready for release to prod, please review and signup"
     }
     }
     
@@ -47,7 +47,7 @@ node{
     stage('10congratulationsforrelease'){
         echo 'congratulations for LMS v1 prod release'
     }
-    stage('sendMS Team Notifications'){
+    stage('Printmessage'){
         echo 'JJ-PROJECT RELEASE TO PROD SUCCESSFUL'
     }
 
