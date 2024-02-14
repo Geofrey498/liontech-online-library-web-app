@@ -33,7 +33,8 @@ node{
     }
     stage('8Approval$Reviewprep4prod'){
     sh "echo 'application is ready for review and prod release' "
-    timeout[time:5, unit: 'DAYS']{input message:"App is ready for release to prod, please review and signup"
+    timeout[time:5, unit: 'DAYS']{
+    input message: "App is ready for release to prod, please review and signup"
     }
     }
     
