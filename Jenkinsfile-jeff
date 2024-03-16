@@ -14,16 +14,16 @@ node{
     }
     stage('5deploy2DevEnv'){
         sh "echo 'deploying to dev environmnt"
-        deploy adapters: [tomcat9(credentialsId: 'tomcat-deployment', path: '', url: 'http://3.99.168.6:8009/')], contextPath: 'dev', war: 'target/*.war'
-    }
+        deploy adapters: [tomcat9(credentialsId: 'tomcat-deployment', path: '', url: 'http://52.60.79.36:8009/')], contextPath: 'dev', war: 'target/*.war'
+        }
     stage('6DeploytoTestENV'){
         sh "echo 'deploy to test environment' "
-        deploy adapters: [tomcat9(credentialsId: 'tomcat-deployment', path: '', url: 'http://3.99.168.6:8009/')], contextPath: 'test', war: 'target/*.war'
-    }
+        deploy adapters: [tomcat9(credentialsId: 'tomcat-deployment', path: '', url: 'http://52.60.79.36:8009/')], contextPath: 'test', war: 'target/*.war'
+         }
     stage('7Deploy2UAT'){
         sh "echo 'deploy to UAT or staging environment' "
-        deploy adapters: [tomcat9(credentialsId: 'tomcat-deployment', path: '', url: 'http://3.99.168.6:8009/')], contextPath: 'staging', war: 'target/*.war'
-    }
+        deploy adapters: [tomcat9(credentialsId: 'tomcat-deployment', path: '', url: 'http://52.60.79.36:8009/')], contextPath: 'staging', war: 'target/*.war'
+         }
     stage('8Approval&review+prep4prod'){
         sh "echo 'application is ready for review and prod release' "
         timeout(time:5, unit: 'DAYS'){
@@ -32,8 +32,8 @@ node{
     }
     stage('9DEPLOY2PROD'){
         sh "sleep 50"
-        deploy adapters: [tomcat9(credentialsId: 'tomcat-deployment', path: '', url: 'http://3.99.168.6:8009/')], contextPath: 'production', war: 'target/*.war'
-    }
+        deploy adapters: [tomcat9(credentialsId: 'tomcat-deployment', path: '', url: 'http://52.60.79.36:8009/')], contextPath: 'production', war: 'target/*.war'
+         }
     stage('congratulationsforrelease'){
         echo 'congratulations for online library prod release'
 
