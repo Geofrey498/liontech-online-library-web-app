@@ -76,13 +76,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>LION TECH ACADEMY Releases Nexus Repository</name>
-	      <url>http://3.99.136.193:8081/repository/patson/</url>
+	      <url>http://35.183.102.91:8081/repository/patson/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>LION TECH ACADEMY Snapshot Nexus Repository </name>
-	      <url>http://3.99.136.193:8081/repository/snapshot-maswari/</url>
+	      <url>http://35.183.102.91:8081/repository/snapshot-maswari/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
